@@ -53,6 +53,12 @@ export class BodyDataMainComponent implements OnInit {
               fill: false,
               borderColor: '#42A5F5'
             },
+            {
+              label: 'BMI',
+              data: [],
+              fill: false,
+              borderColor: '#f54242'
+            }
           ]
         };
 
@@ -77,6 +83,7 @@ export class BodyDataMainComponent implements OnInit {
               console.log('current', current);
               previous.labels.push(current.date);
               previous.datasets[0].data.push(current.weight);
+              previous.datasets[1].data.push(makeBmi(current.height, current.weight));
               return previous;
             }, initialState
           );
@@ -107,3 +114,7 @@ export class BodyDataMainComponent implements OnInit {
     };
   }
 }
+
+export const makeBmi = (height, weight) => {
+  return weight / ((height / 100) * 2);
+};
