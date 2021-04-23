@@ -56,16 +56,30 @@ export class BodyDataMainComponent implements OnInit {
           ]
         };
 
-        const result = values.reduce(
-          (previous, current) => {
-            console.log('previous', previous);
-            console.log('current', current);
-            previous.labels.push(current.weight);
-            previous.datasets[0].data.push(current.weight);
-            return previous;
-          }, initialState
-        );
+        const result = values.sort((a, b) => {
+          const tempA = a.date.split('/');
+          const A = (tempA[2] + tempA[0] + tempA[1]) + 0;
+          const tempB = b.date.split('/');
+          const B = (tempB[2] + tempB[0] + tempB[1]) + 0;
+          if (A < B) {
+            return -1;
+          }
+          if (A > B) {
+            return 1;
+          }
+          // i nomi devono essere uguali*!/
+          return 0;
 
+        })
+          .reduce(
+            (previous, current) => {
+              console.log('previous', previous);
+              console.log('current', current);
+              previous.labels.push(current.date);
+              previous.datasets[0].data.push(current.weight);
+              return previous;
+            }, initialState
+          );
         console.log('result', result);
         return result;
       }

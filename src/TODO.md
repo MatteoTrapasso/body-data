@@ -1,5 +1,6 @@
 #TODO
-- migliorare algoritmo trasformazione lista grafico utilizzando reduce
++ migliorare algoritmo trasformazione lista grafico utilizzando reduce
++ ordinare elementi (data)
 - aggiungere autenticazione
 - user visibile solo ad amministratore
 - aggiungere collegamento con autenticazione oauth0
