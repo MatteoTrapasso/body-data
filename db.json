@@ -1,22 +1,6 @@
 {
   "user": [
     {
-      "id": 1,
-      "name": "Doti",
-      "surname": "Fili",
-      "email": "dfilippi0@unesco.org",
-      "gender": "Bigender",
-      "description": "eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo"
-    },
-    {
-      "id": 2,
-      "name": "Mirna",
-      "surname": "Cooling",
-      "email": "mcooling1@arstechnica.com",
-      "gender": "Agender",
-      "description": "dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit"
-    },
-    {
       "id": 3,
       "name": "Paolina",
       "surname": "Riall",
@@ -681,12 +665,6 @@
       "date": "7/15/2020"
     },
     {
-      "id": 46,
-      "height": 184,
-      "weight": 62,
-      "date": "4/9/2021"
-    },
-    {
       "id": 47,
       "height": 195,
       "weight": 74,
@@ -715,12 +693,6 @@
       "weight": "89",
       "date": "01/11/1997",
       "id": 51
-    },
-    {
-      "height": "140",
-      "weight": "98",
-      "date": "01/10/1990",
-      "id": 52
     },
     {
       "id": 53,
