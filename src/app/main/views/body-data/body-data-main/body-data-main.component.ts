@@ -43,26 +43,31 @@ export class BodyDataMainComponent implements OnInit {
     this.bodyDatas$ = this.store$.select(
       BodyDataStoreSelectors.selectAll
     ).pipe(map((values: BodyData[]) => {
-        const data = values.map(value => {
-            return value.weight;
-          }
-        );
-        const labels = values.map(value => {
-            return value.date;
-          }
-        );
-        return {
-          labels,
+
+        const initialState = {
+          labels: [],
           datasets: [
             {
               label: 'KG',
-              data,
+              data: [],
               fill: false,
               borderColor: '#42A5F5'
             },
           ]
         };
 
+        const result = values.reduce(
+          (previous, current) => {
+            console.log('previous', previous);
+            console.log('current', current);
+            previous.labels.push(current.weight);
+            previous.datasets[0].data.push(current.weight);
+            return previous;
+          }, initialState
+        );
+
+        console.log('result', result);
+        return result;
       }
       )
     );

@@ -1,4 +1,4 @@
-- aprire delle issue al posto delle TODO
+#TODO
 - migliorare algoritmo trasformazione lista grafico utilizzando reduce
 - aggiungere autenticazione
 - user visibile solo ad amministratore
