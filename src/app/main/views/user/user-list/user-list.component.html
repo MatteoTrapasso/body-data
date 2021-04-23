@@ -1,4 +1,4 @@
-<p-table [value]="collection$ | async" [selection]="itemsSelected$ | async" (selectionChange)="onSelectionChange($event)">
+<p-table [value]="collection$ | async" [selection]="itemsSelected$ | async" (selectionChange)="onSelectionChange($event)" styleClass="p-datatable-responsive-demo">
   <ng-template pTemplate="header">
     <tr>
       <th style="width: 3rem">
