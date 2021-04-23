@@ -13,13 +13,17 @@ $topbarBgColor:#007ad9;
 //$topbarButtonHoverTextColor:#333333;
 //
 ///* sidebar */
-$sidebarBgColor:#ffffff;
+$sidebarBgColor:var(--surface-b);
 //$sidebarBorderColor:#888888;
 //$sidebarAnimationDuration:.3s;
 //
 ///* mask */
 //$layoutMaskBgColor:#424242;
+$layoutmainBgColor:var(--surface-b);
 //
 ///* footer */
-$footerBgColor:#f4f4f4;
+$footerBgColor:var(--surface-b);
 $footerBorderColor:#888888;
+
+//background-color:var(--surface-b);
+//color:var(--text-color);
