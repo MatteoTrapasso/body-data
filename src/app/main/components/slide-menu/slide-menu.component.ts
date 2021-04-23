@@ -52,7 +52,7 @@ export class SlideMenuComponent implements OnInit, OnDestroy {
   // todo: completare profilazione dei pulsanti.
   ngOnInit(): void {
     this.items$ = this.store$.pipe(
-      select(SlideMenuStoreSelectors.selectItems),
+      select(SlideMenuStoreSelectors.selectItemsAuth), // <== cambiamo la select da utilizzare
       menuItemsDecorator(this.store$)
     );
 

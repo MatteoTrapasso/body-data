@@ -9,6 +9,7 @@ export interface State {
   items: MenuItem[];
 }
 
+
 export const initialState: State = {
   open: false,
   item: {breadcrumb: [], data: null},
@@ -16,6 +17,8 @@ export const initialState: State = {
     {
       label: 'User',
       icon: 'pi pi-fw pi-user-plus',
+      // @ts-ignore
+      roles: ['administrator'],
       command: (event$) => {
         // invoco il router per cambiare pagina
         event$.item.store$.dispatch(RouterStoreActions.RouterGo({path: ['user']}));
@@ -32,6 +35,8 @@ export const initialState: State = {
     {
       label: 'BodyData',
       icon: 'pi pi-fw pi-user-plus',
+      // @ts-ignore
+      roles: ['roleA'],
       command: (event$) => {
         // invoco il router per cambiare pagina
         event$.item.store$.dispatch(RouterStoreActions.RouterGo({path: ['body-data']}));
