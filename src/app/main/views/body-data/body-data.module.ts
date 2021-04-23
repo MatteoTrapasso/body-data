@@ -17,6 +17,7 @@ import {ButtonEditManyTestBodyDataComponent} from './components/button-edit-many
 import {ButtonCreateManyTestBodyDataComponent} from './components/button-create-many-test-body-data.component';
 import {NgLetModule} from '@core/directive/ng-let.directive';
 import {ToolbarModule} from 'primeng/toolbar';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
@@ -28,20 +29,21 @@ import {ToolbarModule} from 'primeng/toolbar';
     ButtonEditManyTestBodyDataComponent,
     ButtonCreateManyTestBodyDataComponent
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BodyDataRoutingModule,
-    TableModule,
-    DialogModule,
-    ButtonModule,
-    InputTextModule,
-    PipesModule,
-    SearchModule,
-    NgLetModule,
-    ToolbarModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        BodyDataRoutingModule,
+        TableModule,
+        DialogModule,
+        ButtonModule,
+        InputTextModule,
+        PipesModule,
+        SearchModule,
+        NgLetModule,
+        ToolbarModule,
+        ChartModule
+    ],
   providers: [],
   entryComponents: []
 })

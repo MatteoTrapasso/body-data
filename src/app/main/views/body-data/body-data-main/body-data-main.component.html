@@ -9,4 +9,8 @@
     <app-button-create-many-test-body-data></app-button-create-many-test-body-data>
   </ng-template>
 </p-toolbar>
+<div class="card">
+  <h5>Basic</h5>
+  <p-chart [height]="300" [width]="500" type="line" [data]="bodyDatas$ | async" [options]="bodyDataOptions"></p-chart>
+</div>
 <app-body-data-list></app-body-data-list>
