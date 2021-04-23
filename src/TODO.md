@@ -5,5 +5,7 @@
 - [ x ] aggiungere autenticazione
 - [ x ] user visibile solo ad amministratore
 - [ x ] migliorare il form per inserimento dati
+- [ x ] ridimensionare tabella (nascondere colonne per mobile (primeng))
 - [   ] migliorare form user
+- [   ] eliminare json nei form
 - [   ] aggiungere collegamento con autenticazione oauth0

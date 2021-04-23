@@ -11,7 +11,7 @@ import {PopUpData} from '@root-store/router-store/pop-up-base.component';
 @Component({
   selector: 'app-body-data-list',
   templateUrl: `body-data-list.component.html`,
-  styles: [``],
+  styleUrls: [`body-data-list.component.scss`],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BodyDataListComponent implements OnInit {
