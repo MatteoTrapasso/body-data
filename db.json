@@ -399,6 +399,14 @@
       "email": "bdinkin1d@amazon.com",
       "gender": "Genderfluid",
       "description": "adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget"
+    },
+    {
+      "name": "traps",
+      "surname": "Fili",
+      "email": "matteo.trapasso97@gmail.com",
+      "gender": "m",
+      "description": "fs",
+      "id": 51
     }
   ],
   "body-data": [
@@ -713,6 +721,12 @@
       "weight": "98",
       "date": "01/10/1990",
       "id": 52
+    },
+    {
+      "id": 53,
+      "height": 190,
+      "weight": 98,
+      "date": "4/23/2021"
     }
   ]
 }

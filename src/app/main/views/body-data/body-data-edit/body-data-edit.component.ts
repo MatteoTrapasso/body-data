@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {closePopUpAction, PopUpBaseComponent} from '@root-store/router-store/pop-up-base.component';
 import {BodyData} from '@models/vo/body-data';
-import {FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {BodyDataStoreActions} from '@root-store/body-data-store';
 
 
@@ -12,14 +12,33 @@ import {BodyDataStoreActions} from '@root-store/body-data-store';
 })
 export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
 
-  form: FormGroup;
-  keys: string[];
+  form: FormGroup; // form
+
+  id: FormControl; // attributo
+  height: FormControl; // attributo
+  weight: FormControl; // attributo
+  date: FormControl; // attributo
 
   setItemPerform(value: BodyData): void {
-    const group = this.fb.group({});
-    this.keys = Object.keys(value);
-    this.keys.forEach(key => group.addControl(key, this.fb.control({value: value[key], disabled: key === 'id'})));
-    this.form = group;
+    this.makeFrom();
+    this.form.reset(value);
+  }
+
+  makeFrom(): void {
+
+    const date = new Date();
+
+    this.id = this.fb.control({value: '', disabled: true});
+    this.height = this.fb.control('', Validators.required);
+    this.weight = this.fb.control('', Validators.required);
+    this.date = this.fb.control({value: date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear(), disabled: true});
+
+    this.form = this.fb.group({ // form
+      id: this.id, // attributo
+      height: this.height, // attributo
+      weight: this.weight, // attributo
+      date: this.date // attributo
+    });
   }
 
   acceptPerform(item: BodyData): void {
@@ -44,7 +63,4 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
     }
   }
 
-  // cancel(): void {
-  //   this.store$.dispatch(closePopUpAction(this.route));
-  // }
 }

@@ -4,5 +4,6 @@
 - [ x ] add BMI
 - [ x ] aggiungere autenticazione
 - [ x ] user visibile solo ad amministratore
+- [ x ] migliorare il form per inserimento dati
+- [   ] migliorare form user
 - [   ] aggiungere collegamento con autenticazione oauth0
-- [   ] migliorare il form per inserimento dati

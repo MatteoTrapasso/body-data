@@ -30,7 +30,8 @@ export class ButtonNewBodyDataComponent implements OnInit {
 
   onCreate() {
     const item: BodyData = new BodyData();
-
+    const dateA = new Date();
+    item.date = dateA.getMonth() + 1 + '/' + dateA.getDate() + '/' + dateA.getFullYear();
     const data: PopUpData<BodyData> = {
       item,
       props: {title: 'New BodyData', route: 'body-data'}
