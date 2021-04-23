@@ -28,6 +28,22 @@ export const initialState: State = {
           }
         }));
       }
+    },
+    {
+      label: 'BodyData',
+      icon: 'pi pi-fw pi-user-plus',
+      command: (event$) => {
+        // invoco il router per cambiare pagina
+        event$.item.store$.dispatch(RouterStoreActions.RouterGo({path: ['body-data']}));
+
+        // salvo nello store del menù l'elemento selezionato.
+        event$.item.store$.dispatch(SlideMenuStoreActions.Select({
+          item: {
+            data: {},
+            breadcrumb: ['Sezione ', 'BodyData'] // breadcrumb
+          }
+        }));
+      }
     }
   ]
 };

@@ -8,6 +8,7 @@ import {environment} from '../../environments/environment';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {SlideMenuStoreModule} from '@root-store/slide-menu-store';
 import { UserStoreModule } from '@root-store/user-store';
+import { BodyDataStoreModule } from '@root-store/body-data-store';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { UserStoreModule } from '@root-store/user-store';
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
     UserStoreModule,
+    BodyDataStoreModule,
   ],
   declarations: []
 })

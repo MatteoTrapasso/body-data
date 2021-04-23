@@ -400,5 +400,307 @@
       "gender": "Genderfluid",
       "description": "adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget"
     }
+  ],
+  "body-data": [
+    {
+      "id": 1,
+      "height": 200,
+      "weight": 162,
+      "date": "12/18/2020"
+    },
+    {
+      "id": 2,
+      "height": 160,
+      "weight": 164,
+      "date": "8/21/2020"
+    },
+    {
+      "id": 3,
+      "height": 198,
+      "weight": 79,
+      "date": "6/7/2020"
+    },
+    {
+      "id": 4,
+      "height": 163,
+      "weight": 85,
+      "date": "6/1/2020"
+    },
+    {
+      "id": 5,
+      "height": 162,
+      "weight": 168,
+      "date": "2/20/2021"
+    },
+    {
+      "id": 6,
+      "height": 184,
+      "weight": 93,
+      "date": "10/1/2020"
+    },
+    {
+      "id": 7,
+      "height": 163,
+      "weight": 85,
+      "date": "12/16/2020"
+    },
+    {
+      "id": 8,
+      "height": 179,
+      "weight": 151,
+      "date": "8/18/2020"
+    },
+    {
+      "id": 9,
+      "height": 200,
+      "weight": 105,
+      "date": "12/16/2020"
+    },
+    {
+      "id": 10,
+      "height": 161,
+      "weight": 88,
+      "date": "10/27/2020"
+    },
+    {
+      "id": 11,
+      "height": 195,
+      "weight": 176,
+      "date": "3/25/2021"
+    },
+    {
+      "id": 12,
+      "height": 175,
+      "weight": 165,
+      "date": "3/30/2021"
+    },
+    {
+      "id": 13,
+      "height": 170,
+      "weight": 177,
+      "date": "1/31/2021"
+    },
+    {
+      "id": 14,
+      "height": 161,
+      "weight": 150,
+      "date": "10/30/2020"
+    },
+    {
+      "id": 15,
+      "height": 191,
+      "weight": 195,
+      "date": "6/19/2020"
+    },
+    {
+      "id": 16,
+      "height": 161,
+      "weight": 184,
+      "date": "1/7/2021"
+    },
+    {
+      "id": 17,
+      "height": 187,
+      "weight": 200,
+      "date": "5/9/2020"
+    },
+    {
+      "id": 18,
+      "height": 178,
+      "weight": 113,
+      "date": "8/25/2020"
+    },
+    {
+      "id": 19,
+      "height": 189,
+      "weight": 89,
+      "date": "12/31/2020"
+    },
+    {
+      "id": 20,
+      "height": 190,
+      "weight": 99,
+      "date": "3/23/2021"
+    },
+    {
+      "id": 21,
+      "height": 179,
+      "weight": 74,
+      "date": "12/16/2020"
+    },
+    {
+      "id": 22,
+      "height": 183,
+      "weight": 132,
+      "date": "5/22/2020"
+    },
+    {
+      "id": 23,
+      "height": 172,
+      "weight": 61,
+      "date": "9/12/2020"
+    },
+    {
+      "id": 24,
+      "height": 191,
+      "weight": 194,
+      "date": "12/12/2020"
+    },
+    {
+      "id": 25,
+      "height": 198,
+      "weight": 107,
+      "date": "6/22/2020"
+    },
+    {
+      "id": 26,
+      "height": 190,
+      "weight": 189,
+      "date": "2/12/2021"
+    },
+    {
+      "id": 27,
+      "height": 197,
+      "weight": 198,
+      "date": "6/8/2020"
+    },
+    {
+      "id": 28,
+      "height": 189,
+      "weight": 157,
+      "date": "3/6/2021"
+    },
+    {
+      "id": 29,
+      "height": 162,
+      "weight": 83,
+      "date": "4/22/2021"
+    },
+    {
+      "id": 30,
+      "height": 169,
+      "weight": 197,
+      "date": "9/24/2020"
+    },
+    {
+      "id": 31,
+      "height": 168,
+      "weight": 117,
+      "date": "11/5/2020"
+    },
+    {
+      "id": 32,
+      "height": 165,
+      "weight": 101,
+      "date": "3/1/2021"
+    },
+    {
+      "id": 33,
+      "height": 195,
+      "weight": 145,
+      "date": "2/5/2021"
+    },
+    {
+      "id": 34,
+      "height": 170,
+      "weight": 61,
+      "date": "2/18/2021"
+    },
+    {
+      "id": 35,
+      "height": 160,
+      "weight": 75,
+      "date": "4/13/2021"
+    },
+    {
+      "id": 36,
+      "height": 179,
+      "weight": 75,
+      "date": "5/23/2020"
+    },
+    {
+      "id": 37,
+      "height": 182,
+      "weight": 96,
+      "date": "2/26/2021"
+    },
+    {
+      "id": 38,
+      "height": 182,
+      "weight": 177,
+      "date": "6/9/2020"
+    },
+    {
+      "id": 39,
+      "height": 197,
+      "weight": 71,
+      "date": "11/3/2020"
+    },
+    {
+      "id": 40,
+      "height": 175,
+      "weight": 133,
+      "date": "10/25/2020"
+    },
+    {
+      "id": 41,
+      "height": 161,
+      "weight": 89,
+      "date": "11/13/2020"
+    },
+    {
+      "id": 42,
+      "height": 161,
+      "weight": 175,
+      "date": "1/5/2021"
+    },
+    {
+      "id": 43,
+      "height": 199,
+      "weight": 177,
+      "date": "1/13/2021"
+    },
+    {
+      "id": 44,
+      "height": 171,
+      "weight": 108,
+      "date": "7/3/2020"
+    },
+    {
+      "id": 45,
+      "height": 170,
+      "weight": 85,
+      "date": "7/15/2020"
+    },
+    {
+      "id": 46,
+      "height": 184,
+      "weight": 62,
+      "date": "4/9/2021"
+    },
+    {
+      "id": 47,
+      "height": 195,
+      "weight": 74,
+      "date": "8/5/2020"
+    },
+    {
+      "id": 48,
+      "height": 168,
+      "weight": 47,
+      "date": "1/18/2021"
+    },
+    {
+      "id": 49,
+      "height": 186,
+      "weight": 69,
+      "date": "4/17/2021"
+    },
+    {
+      "id": 50,
+      "height": 178,
+      "weight": 194,
+      "date": "4/29/2020"
+    }
   ]
 }
