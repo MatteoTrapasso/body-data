@@ -9,6 +9,7 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {SlideMenuStoreModule} from '@root-store/slide-menu-store';
 import { UserStoreModule } from '@root-store/user-store';
 import { BodyDataStoreModule } from '@root-store/body-data-store';
+import { AuthStoreModule } from '@root-store/auth-store';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { BodyDataStoreModule } from '@root-store/body-data-store';
     }),
     UserStoreModule,
     BodyDataStoreModule,
+    AuthStoreModule,
   ],
   declarations: []
 })

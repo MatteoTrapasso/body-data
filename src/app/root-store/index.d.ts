@@ -9,3 +9,4 @@ export * from './slide-menu-store';
 
 export * from './user-store';
 export * from './body-data-store';
+export * from './auth-store';
