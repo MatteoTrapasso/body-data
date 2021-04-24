@@ -1,45 +1,51 @@
 import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
 import * as actions from './actions';
-import {catchError, switchMap} from 'rxjs/operators';
+import {switchMap, tap} from 'rxjs/operators';
+import {AuthenticationService} from './authentication.service';
+import {combineLatest, of} from 'rxjs';
 import {RouterGo} from '@root-store/router-store/actions';
-import {AuthService} from './auth.service';
-import {afterLoginUri, afterLogoutUri} from './conf';
+import {afterLogoutUri} from './conf';
 
 @Injectable()
 export class AuthStoreEffects {
-  constructor(private readonly actions$: Actions, private readonly authService: AuthService) {
+  constructor(private actions$: Actions,
+              private authService: AuthenticationService) {
   }
 
-  login$ = createEffect(() =>
+  login$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(actions.LoginRequest),
+        tap(() => this.authService.login())
+      ),
+    {dispatch: false}
+  );
+
+  checkAuth$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(actions.LoginRequest),
-      switchMap((payload) => this.authService.login(payload.username, payload.password).pipe(
-        switchMap(auth => [
-            RouterGo({path: [afterLoginUri]}),
-            actions.LoginResult({auth, isLoggedIn: true})
-          ]
-        ),
-        catchError(err => {
-          return [actions.LoginError({err})];
-        }),
-      )),
+      // If an action with the type 'checkAuth' occurs in the actions$ stream...
+      ofType(actions.CheckAuth),
+      // return an observable including the latest info from 'isLoggedIn' and 'userProfile'
+      switchMap(() =>
+        combineLatest([this.authService.isLoggedIn$, this.authService.user$])
+      ),
+      // Take it out and return the appropriate action based on if logged in or not
+      switchMap(([isLoggedIn, profile]) => {
+        if (isLoggedIn) {
+          return of(actions.LoginResult({profile, isLoggedIn}));
+        }
+
+        return of(actions.LogoutResult());
+      })
     )
   );
 
   logout$ = createEffect(() =>
     this.actions$.pipe(
       ofType(actions.LogoutRequest),
-      switchMap((payload) => this.authService.logout().pipe(
-        switchMap(user => [
-            RouterGo({path: [afterLogoutUri]}),
-            actions.LogoutResult()
-          ]
-        ),
-        catchError(err => {
-          return [actions.LogoutError()];
-        }),
-      )),
+      tap(() => this.authService.logout()),
+      switchMap(() => of(actions.LogoutResult()))
     )
   );
 

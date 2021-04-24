@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, CanActivateChild, RouterStateSnapshot} from '@angular/router';
 import {select, Store} from '@ngrx/store';
 import * as AuthStoreSelectors from './selectors';
-import * as AuthStoreActions from './actions';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
+import * as AuthStoreActions from './actions';
 
 @Injectable({
   providedIn: 'root'

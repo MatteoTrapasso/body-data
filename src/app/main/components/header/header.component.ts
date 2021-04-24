@@ -10,7 +10,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
         </div>
       </div>
       <div class="p-col text-align-right">
-        <em class="fas fa-2x fa-user fa-button p-1" style="color: #FFF;"></em>
+        <app-login></app-login>
+<!--        <em class="fas fa-2x fa-user fa-button p-1" style="color: #FFF;"></em>-->
       </div>
     </div>
   `,
@@ -19,7 +20,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
       opacity: 0.5;
       transition: transform 0.2s;
       /*transform: scale(1.1);*/
-      cursor: pointer; cursor: hand;
+      cursor: pointer;
+      cursor: hand;
     }
   `],
   encapsulation: ViewEncapsulation.None

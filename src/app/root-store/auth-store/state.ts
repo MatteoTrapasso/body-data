@@ -1,16 +1,11 @@
-import {HttpErrorResponse} from '@angular/common/http';
-import {Auth} from '@models/vo/auth';
+import {Profile} from './profile';
 
 export interface State {
   isLoggedIn: boolean;
-  auth: Auth;
-  hasError: boolean;
-  err: HttpErrorResponse;
+  userProfile: Profile;
 }
 
 export const initialState: State = {
   isLoggedIn: false,
-  auth: new Auth(),
-  hasError: false,
-  err: null
+  userProfile: null
 };

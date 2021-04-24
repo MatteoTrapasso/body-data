@@ -1,2 +1,2 @@
 export const afterLoginUri = 'home';
-export const afterLogoutUri = 'login';
+export const afterLogoutUri = 'home';
