@@ -4,26 +4,30 @@ import {ActionReducer, StoreModule} from '@ngrx/store';
 import {EffectsModule} from '@ngrx/effects';
 import {AuthStoreEffects} from './effects';
 import {featureReducer} from './reducer';
-import {Auth} from '@models/vo/auth';
 import {Names} from './names';
 import {State} from './state';
-import {AuthService} from './auth.service';
-import {AuthMockService} from './auth-mock.service';
+import {AuthModule} from '@auth0/auth0-angular';
+import {AuthenticationService} from '@root-store/auth-store/authentication.service';
+import {LoginModule} from './login.component';
+import {Profile} from '@root-store/auth-store/profile';
 
-export const INJECTION_TOKEN = new InjectionToken<ActionReducer<Auth>>(`${Names.NAME}-store Reducers`);
+export const INJECTION_TOKEN = new InjectionToken<ActionReducer<Profile>>(`${Names.NAME}-store Reducers`);
 
 @NgModule({
   imports: [
     CommonModule,
     StoreModule.forFeature(Names.NAME, INJECTION_TOKEN),
     EffectsModule.forFeature([AuthStoreEffects]),
+    AuthModule.forRoot({
+      domain: '',
+      clientId: '',
+      redirectUri: window.location.origin,
+    }),
+    LoginModule,
   ],
   declarations: [],
   providers: [AuthStoreEffects,
-    {
-      provide: AuthService,
-      useClass: AuthMockService
-    },
+    AuthenticationService,
     {
       provide: INJECTION_TOKEN,
       useFactory: (): ActionReducer<State> => featureReducer
