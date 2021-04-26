@@ -9,5 +9,7 @@
 - [ x ] aggiungere collegamento con autenticazione oauth0
 - [ x ] fix color (menù-myprogress)
 - [ x ] eliminato pulsanti button-edit-many, button-create-many e barra di ricerca
+- [ x ] style login button
+- [ x ] fix pulsante logout (in mobile non si vede)
 - [   ] migliorare form user
 - [   ] eliminare json nei form

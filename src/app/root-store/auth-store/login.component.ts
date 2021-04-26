@@ -7,16 +7,18 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {SharedModule} from 'primeng/api';
 import {CardModule} from 'primeng/card';
 import {AvatarModule} from 'primeng/avatar';
+import {ButtonModule} from 'primeng/button';
 
 @Component({
   selector: 'app-login',
   template: `
     <p-overlayPanel #op>
       <ng-template pTemplate>
-        <p-card>
+<!--        <p-card>
           <pre>{{ profile$ | async | json }}</pre>
           <button (click)="logout(); op.hide();">Logout</button>
-        </p-card>
+        </p-card>-->
+        <button pButton class="p-button-danger" (click)="logout(); op.hide();">Logout</button>
       </ng-template>
     </p-overlayPanel>
     <div>
@@ -24,7 +26,7 @@ import {AvatarModule} from 'primeng/avatar';
         <p-avatar image="{{(profile$ | async).picture}}" shape="circle" (click)="op.toggle($event)"></p-avatar>
       </div>
       <ng-template #loginContent>
-        <button (click)="login()">Login</button>
+        <button pButton class="p-button-Primary" (click)="login()">Login</button>
       </ng-template>
     </div>
   `,
@@ -62,6 +64,7 @@ export class LoginComponent implements OnInit {
     SharedModule,
     CardModule,
     AvatarModule,
+    ButtonModule,
   ],
   declarations: [LoginComponent],
   exports: [LoginComponent],
