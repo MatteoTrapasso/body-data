@@ -7,6 +7,7 @@
 - [ x ] migliorare il form per inserimento dati
 - [ x ] ridimensionare tabella (nascondere colonne per mobile (primeng))
 - [ x ] aggiungere collegamento con autenticazione oauth0
-- [   ] fix color (menù-myprogress)
+- [ x ] fix color (menù-myprogress)
+- [ x ] eliminato pulsanti button-edit-many, button-create-many e barra di ricerca
 - [   ] migliorare form user
 - [   ] eliminare json nei form

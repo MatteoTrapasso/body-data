@@ -10,7 +10,7 @@ import {RootStoreState} from '@root-store/index';
   selector: 'app-button-new-body-data',
   template: `
     <button type="button" pButton icon="pi pi-plus"
-            label="New BodyData" (click)="onCreate()"
+            label="Add" (click)="onCreate()"
             [disabled]="(disabled$ |async)"
             class="p-button-success"></button>
   `,
