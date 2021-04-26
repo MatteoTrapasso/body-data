@@ -11,7 +11,7 @@
 - [ x ] eliminato pulsanti button-edit-many, button-create-many e barra di ricerca
 - [ x ] style login button
 - [ x ] fix pulsante logout (in mobile non si vede)
+- [ x ] eliminare json nei form
 - [   ] migliorare form user
-- [   ] eliminare json nei form
 - [   ] mostrare solo dati utente loggato
 - [   ] inserire id nuova misurazione associato a utente loggato
