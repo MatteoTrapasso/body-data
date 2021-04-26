@@ -19,8 +19,8 @@ export const INJECTION_TOKEN = new InjectionToken<ActionReducer<Profile>>(`${Nam
     StoreModule.forFeature(Names.NAME, INJECTION_TOKEN),
     EffectsModule.forFeature([AuthStoreEffects]),
     AuthModule.forRoot({
-      domain: '',
-      clientId: '',
+      domain: 'bodydata.eu.auth0.com',
+      clientId: 'lCN6OO71OXxgt9Rz2dC5BakIwK9mmfL3',
       redirectUri: window.location.origin,
     }),
     LoginModule,
