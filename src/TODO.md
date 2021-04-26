@@ -12,6 +12,7 @@
 - [ x ] style login button
 - [ x ] fix pulsante logout (in mobile non si vede)
 - [ x ] eliminare json nei form
+- [ x ] HOME
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
 - [   ] inserire id nuova misurazione associato a utente loggato
