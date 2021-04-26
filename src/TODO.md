@@ -13,3 +13,5 @@
 - [ x ] fix pulsante logout (in mobile non si vede)
 - [   ] migliorare form user
 - [   ] eliminare json nei form
+- [   ] mostrare solo dati utente loggato
+- [   ] inserire id nuova misurazione associato a utente loggato
