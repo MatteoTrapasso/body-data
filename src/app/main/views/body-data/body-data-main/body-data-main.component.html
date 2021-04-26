@@ -10,7 +10,7 @@
   </ng-template>
 </p-toolbar>
 <div class="card">
-  <h5>My Progress</h5>
-  <p-chart [height]="300" [width]="500" type="line" [data]="bodyDatas$ | async" [options]="bodyDataOptions"></p-chart>
+  <p style="color: #898989; font-size: 1em">My Progress</p>
+  <p-chart [height]=" 300" [width]="500" type="line" [data]="bodyDatas$ | async" [options]="bodyDataOptions"></p-chart>
 </div>
 <app-body-data-list></app-body-data-list>
