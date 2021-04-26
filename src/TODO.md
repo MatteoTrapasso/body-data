@@ -13,6 +13,8 @@
 - [ x ] fix pulsante logout (in mobile non si vede)
 - [ x ] eliminare json nei form
 - [ x ] HOME
+- [ x ] bodyData icon
+- [ x ] app favicon
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
 - [   ] inserire id nuova misurazione associato a utente loggato

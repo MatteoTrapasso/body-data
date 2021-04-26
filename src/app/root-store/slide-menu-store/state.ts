@@ -34,7 +34,7 @@ export const initialState: State = {
     },
     {
       label: 'BodyData',
-      icon: 'pi pi-fw pi-user-plus',
+      icon: 'pi pi-fw pi-chart-line',
       // @ts-ignore
       roles: ['roleA'],
       command: (event$) => {
