@@ -15,6 +15,7 @@
 - [ x ] HOME
 - [ x ] bodyData icon
 - [ x ] app favicon
-- [   ] migliorare form user
+- [   ] eliminare warning dipendenze
 - [   ] mostrare solo dati utente loggato
 - [   ] inserire id nuova misurazione associato a utente loggato
+- [   ] migliorare form user
