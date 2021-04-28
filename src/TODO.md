@@ -15,6 +15,9 @@
 - [ x ] HOME
 - [ x ] bodyData icon
 - [ x ] app favicon
+- [ x ] sezione home nel menu
+- [   ] UnauthorizedError: jwt malformed
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
-- [   ] inserire id nuova misurazione associato a utente loggato
+---------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------
+- [   ]
