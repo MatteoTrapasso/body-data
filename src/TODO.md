@@ -16,7 +16,7 @@
 - [ x ] bodyData icon
 - [ x ] app favicon
 - [ x ] sezione home nel menu
-- [   ] UnauthorizedError: jwt malformed
+- [ x ] UnauthorizedError: jwt malformed
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
 ---------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------

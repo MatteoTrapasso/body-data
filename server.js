@@ -32,7 +32,6 @@ const checkJwt = jwt({
 });
 
 
-
 const api = '/api/v1';
 // Serve static files....
 server.use(express.static(__dirname + '/dist/body-data'));
