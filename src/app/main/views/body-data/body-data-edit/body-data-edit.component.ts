@@ -14,7 +14,7 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
 
   form: FormGroup; // form
 
-  id: FormControl; // attributo
+  _id: FormControl; // attributo
   height: FormControl; // attributo
   weight: FormControl; // attributo
   date: FormControl; // attributo
@@ -28,13 +28,13 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
 
     const date = new Date();
 
-    this.id = this.fb.control({value: '', disabled: true});
+    this._id = this.fb.control({value: '', disabled: true});
     this.height = this.fb.control('', Validators.required);
     this.weight = this.fb.control('', Validators.required);
     this.date = this.fb.control({value: date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear(), disabled: true});
 
     this.form = this.fb.group({ // form
-      id: this.id, // attributo
+      _id: this._id, // attributo
       height: this.height, // attributo
       weight: this.weight, // attributo
       date: this.date // attributo
@@ -42,7 +42,7 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
   }
 
   acceptPerform(item: BodyData): void {
-    if (item.id) {
+    if (item._id) {
       this.store$.dispatch(BodyDataStoreActions.EditRequest({
         item, onResult: [
           // azione che verrà invocata al result della chiamata all'interno dell'effect.

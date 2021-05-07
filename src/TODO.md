@@ -18,8 +18,12 @@
 - [ x ] sezione home nel menu
 - [ x ] UnauthorizedError: jwt malformed
 - [ x ] creare DB
-- [ x ] creare CRUD Nest js
-- [   ] sostituire CRUD
+- [ x ] creare api Nest js
+- [ x ] sostituire api
+- [ x ] mettere solo url app come parametro cors ()
+- [ x ] rendere risposte api adeguate al FE
+- [   ] creare api per deleteAll, updateMany, insertMany
+- [   ] inserire login nelle api
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
 ---------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------

@@ -4,7 +4,6 @@ const server = jsonServer.create();
 const path = require('path');
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 const middlewares = jsonServer.defaults();
-const cors = require('cors');
 const jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
 
@@ -34,6 +33,7 @@ const checkJwt = jwt({
 
 const api = '/api/v1';
 // Serve static files....
+
 server.use(express.static(__dirname + '/dist/body-data'));
 
 server.use('/api/v2', checkJwt);

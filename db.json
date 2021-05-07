@@ -699,6 +699,30 @@
       "height": 190,
       "weight": 200,
       "date": "4/26/2021"
+    },
+    {
+      "id": 56,
+      "height": 190,
+      "weight": 34,
+      "date": "5/6/2021"
+    },
+    {
+      "id": 57,
+      "height": 190,
+      "weight": 98,
+      "date": "5/6/2021"
+    },
+    {
+      "id": 58,
+      "height": 190,
+      "weight": 98,
+      "date": "5/6/2021"
+    },
+    {
+      "id": 59,
+      "height": null,
+      "weight": null,
+      "date": "5/6/2021"
     }
   ]
 }
