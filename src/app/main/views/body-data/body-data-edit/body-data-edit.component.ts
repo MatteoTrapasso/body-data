@@ -18,6 +18,7 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
   height: FormControl; // attributo
   weight: FormControl; // attributo
   date: FormControl; // attributo
+  user: FormControl; // attributo
 
   setItemPerform(value: BodyData): void {
     this.makeFrom();
@@ -32,12 +33,14 @@ export class BodyDataEditComponent extends PopUpBaseComponent<BodyData> {
     this.height = this.fb.control('', Validators.required);
     this.weight = this.fb.control('', Validators.required);
     this.date = this.fb.control({value: date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear(), disabled: true});
+    this.user = this.fb.control({value: 'matteo', disabled: true});
 
     this.form = this.fb.group({ // form
       _id: this._id, // attributo
       height: this.height, // attributo
       weight: this.weight, // attributo
-      date: this.date // attributo
+      date: this.date, // attributo
+      user: this.user // attributo
     });
   }
 

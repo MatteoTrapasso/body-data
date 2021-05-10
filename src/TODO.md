@@ -24,9 +24,10 @@
 - [ x ] eliminare pulsante copy
 - [ x ] eliminare __v { versionKey: false }
 - [ x ] colore header tabella home
+- [ x ] salvare user
+- [   ] inserire user corrente
 - [   ] per vedere _id bisogna ricaricare pagina
 - [   ] inserire login nelle api
-- [   ] salvare BMI? user?
 - [   ] rendere risposte api adeguate al FE
 - [   ] pulsante copy funziona da modifica (?)
 - [   ] creare api per deleteAll, updateMany, insertMany
