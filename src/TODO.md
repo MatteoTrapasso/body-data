@@ -25,13 +25,13 @@
 - [ x ] eliminare __v { versionKey: false }
 - [ x ] colore header tabella home
 - [ x ] salvare user
+- [ x ] nascondere _id e user nel form
 - [   ] inserire user corrente
 - [   ] per vedere _id bisogna ricaricare pagina
 - [   ] inserire login nelle api
 - [   ] rendere risposte api adeguate al FE
-- [   ] pulsante copy funziona da modifica (?)
+- [   ] mostrare solo dati utente loggato
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] migliorare form user
-- [   ] mostrare solo dati utente loggato
 ---------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------
 - [   ]
