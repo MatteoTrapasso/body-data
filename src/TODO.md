@@ -21,9 +21,15 @@
 - [ x ] creare api Nest js
 - [ x ] sostituire api
 - [ x ] mettere solo url app come parametro cors ()
-- [ x ] rendere risposte api adeguate al FE
-- [   ] creare api per deleteAll, updateMany, insertMany
+- [ x ] eliminare pulsante copy
+- [ x ] eliminare __v { versionKey: false }
+- [ x ] colore header tabella home
+- [   ] per vedere _id bisogna ricaricare pagina
 - [   ] inserire login nelle api
+- [   ] salvare BMI? user?
+- [   ] rendere risposte api adeguate al FE
+- [   ] pulsante copy funziona da modifica (?)
+- [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] migliorare form user
 - [   ] mostrare solo dati utente loggato
 ---------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------
