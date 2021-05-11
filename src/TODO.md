@@ -28,10 +28,10 @@
 - [ x ] nascondere _id e user nel form
 - [   ] inserire user corrente
 - [   ] per vedere _id bisogna ricaricare pagina
-- [   ] inserire login nelle api
+- [   ] inserire login nelle api (inserire url in auth0)
 - [   ] rendere risposte api adeguate al FE
 - [   ] mostrare solo dati utente loggato
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] migliorare form user
----------------------------------------------------VERSIONE 1.0-------------------------------------------------------------------
+---------------------------------------------------VERSIONE 1.0------------------------------------------------------------------------
 - [   ]

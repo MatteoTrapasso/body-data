@@ -36,11 +36,10 @@ export class ButtonNewBodyDataComponent implements OnInit {
       item,
       props: {title: 'New BodyData', route: 'body-data'}
     };
-    item.user = 'Matteo';
+    item.user = 'Matteo'; // passare user loggato
     this.store$.dispatch(RouterStoreActions.RouterGoPopUp({
       path: ['body-data', {outlets: {popUp: ['edit']}}],
       data
     }));
   }
-
 }
