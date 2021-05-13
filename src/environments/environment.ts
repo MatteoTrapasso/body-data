@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 //  webServiceUri: 'https://body-data-crud.herokuapp.com/'
-  webServiceUri: 'http://localhost:3000/'
+  webServiceUri: '/api/v1/'
 };
 
 /*

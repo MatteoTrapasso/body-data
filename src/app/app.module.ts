@@ -40,7 +40,8 @@ import {AuthHttpInterceptor, AuthModule} from '@auth0/auth0-angular';
     ChartModule,
     AuthModule.forRoot({
       domain: 'bodydata.eu.auth0.com',
-      clientId: 'lCN6OO71OXxgt9Rz2dC5BakIwK9mmfL3',
+      clientId: 'gM1Uj6O1RtTjD4QHe0eawpVzoc6bRju2',
+      audience: 'https://bodydata.eu.auth0.com/api/v2/',
       redirectUri: window.location.origin,
       // The AuthHttpInterceptor configuration
       httpInterceptor: {
@@ -52,7 +53,8 @@ import {AuthHttpInterceptor, AuthModule} from '@auth0/auth0-angular';
     }),
   ],
   providers: [ConfirmationService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true }],
+    { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

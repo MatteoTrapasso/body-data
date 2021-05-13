@@ -26,12 +26,12 @@
 - [ x ] colore header tabella home
 - [ x ] salvare user
 - [ x ] nascondere _id e user nel form
-- [   ] inserire user corrente
-- [   ] per vedere _id bisogna ricaricare pagina
-- [   ] inserire login nelle api (inserire url in auth0)
-- [   ] rendere risposte api adeguate al FE
+- [ x ] rendere risposte api adeguate al FE
+- [ x ] inserire login nelle api
+- [   ] inserire user corrente tramite nestjs (.sub)
 - [   ] mostrare solo dati utente loggato
-- [   ] creare api per deleteAll, updateMany, insertMany
-- [   ] migliorare form user
+- [   ] fix logout bug
+- [   ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
 ---------------------------------------------------VERSIONE 1.0------------------------------------------------------------------------
+- [   ] creare api per deleteAll, updateMany, insertMany
 - [   ]
