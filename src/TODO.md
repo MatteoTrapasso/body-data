@@ -1,4 +1,5 @@
 #TODO
+---------------------------------------------------VERSIONE 1.0------------------------------------------------------------------------
 - [ x ] migliorare algoritmo trasformazione lista grafico utilizzando reduce
 - [ x ] ordinare elementi (data)
 - [ x ] add BMI
@@ -25,13 +26,14 @@
 - [ x ] eliminare __v { versionKey: false }
 - [ x ] colore header tabella home
 - [ x ] salvare user
-- [ x ] nascondere _id e user nel form
 - [ x ] rendere risposte api adeguate al FE
 - [ x ] inserire login nelle api
+- [ x ] nascondere _id, user e date dal form
 - [   ] inserire user corrente tramite nestjs (.sub)
+- [   ] nascondere _id e user dalla tabella
 - [   ] mostrare solo dati utente loggato
 - [   ] fix logout bug
 - [   ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
----------------------------------------------------VERSIONE 1.0------------------------------------------------------------------------
+---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ]
