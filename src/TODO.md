@@ -29,11 +29,11 @@
 - [ x ] rendere risposte api adeguate al FE
 - [ x ] inserire login nelle api
 - [ x ] nascondere _id, user e date dal form
-- [   ] inserire user corrente tramite nestjs (.sub)
+- [ x ] inserire user corrente tramite nestjs (.sub)
+- [ x ] mostrare solo dati utente loggato
+- [ x ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
 - [   ] nascondere _id e user dalla tabella
-- [   ] mostrare solo dati utente loggato
 - [   ] fix logout bug
-- [   ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
----------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
+  ---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ]
