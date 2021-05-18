@@ -32,8 +32,8 @@
 - [ x ] inserire user corrente tramite nestjs (.sub)
 - [ x ] mostrare solo dati utente loggato
 - [ x ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
-- [   ] nascondere _id e user dalla tabella
-- [   ] fix logout bug
+- [ x ] nascondere _id e user dalla tabella
   ---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
+- [   ] fix logout bug
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ]
