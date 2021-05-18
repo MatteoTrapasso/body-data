@@ -17,6 +17,7 @@ import {ClickOutsideModule} from '@core/directive/click-outside-directive';
 import {CardModule} from 'primeng/card';
 import {ChartModule} from 'primeng/chart';
 import {AuthHttpInterceptor, AuthModule} from '@auth0/auth0-angular';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -46,14 +47,14 @@ import {AuthHttpInterceptor, AuthModule} from '@auth0/auth0-angular';
       // The AuthHttpInterceptor configuration
       httpInterceptor: {
         allowedList: [
-          '/api',
-          '/api/*',
+          environment.webServiceUri,
+          environment.webServiceUri + '*',
         ],
       },
     }),
   ],
   providers: [ConfirmationService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true }
+    {provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })
