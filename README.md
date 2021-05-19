@@ -1,46 +1,57 @@
 # body-data
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+app created to calculate and monitor the cormporeal parameters, in particular the BMI
 
-# How to use it?
-This project was created to be used with the [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud) library, to understand how to use it read this [guide](https://www.npmjs.com/package/ngrx-entity-crud).
+app link: https://body-data.herokuapp.com/body-data
 
-# What is it for?
-You will be able to create [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) [Angular](https://angular.io/) [NgRx](https://ngrx.io/) applications.
+# the project consists of:
+- NGRX
+- auth0 authentication
+- nestjs api connected to a mongodb database 
+- PrimeNG Theme Designer
+
 
 # Note
 
-compile the library:  
-```
-npm run build
-```
+to start:
 
-publish library:  
+- ###Nestjs api
+
+  - clone repository body-data-crud:
+    https://github.com/MatteoTrapasso/body-data-crud
+
+- ###AUTH0
+
+  - register to auth0.com
   
-go to the "libs/ngrx-entity-crud" folder. 
+  - follow the first part of this tutorial to create your auth0 application
+
+    https://github.com/jucasoft/corso-angular-ngrx/blob/main/AUTH0.md
+
+  - replace the parameters related to auth0 with those of the application you created
+
+- ###MongoDB
+
+  - register to https://account.mongodb.com/account/login
+  - create a DB
+  - replace the parameters related to MongoDB in 'src/app.module.ts' with those of the DB you created
+  
+
+to run:
+
+body-data-crud:
 ```
-npm login (authentication)
-npm publish 
+npm install
+
+build
+
+start:dev
 ```
 
-## DEVELOP
-Package linking:
+body-data:
 ```
-cd <library-compiled>
-npm link
-```
-go to the main folder of the project where to use the library:
-```
-npm link <library-name>
-```
+npm install
 
-##  in case ...
-if the error appears:  
+build
 
+start:dev
 ```
-... 'No provider for Injector!' ...
-```
-edit the file angular.json, set the value of "projects/*/architect/build/options":  
-"preserveSymlinks": true. 
-
-if you don't see changes to the library under development:  
-temporarily remove the library reference from the "package.json" file and rerun "npm link <library-name>". 
