@@ -38,5 +38,6 @@
 - [ x ] disabilitare KG al caricamento della pagina
 - [ x ] spostare pulsanti sotto grafico
 - [ x ] eliminare scritta 'actions' in list
+- [ x ] inserire unità di misura in form e list
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] unificare repository
