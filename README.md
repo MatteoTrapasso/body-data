@@ -1,5 +1,5 @@
 # body-data
-app created to calculate and monitor the cormporeal parameters, in particular the BMI
+app created to calculate and monitor the corporeal parameters, in particular the BMI
 
 app link: https://body-data.herokuapp.com/body-data
 
@@ -10,9 +10,7 @@ app link: https://body-data.herokuapp.com/body-data
 - PrimeNG Theme Designer
 
 
-# Note
-
-to start:
+# to start:
 
 - ###Nestjs api
 
