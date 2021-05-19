@@ -12,7 +12,7 @@ import {ButtonModule} from 'primeng/button';
 @Component({
   selector: 'app-login',
   template: `
-    <p-overlayPanel #op>
+    <p-overlayPanel #op appendTo = "body">
       <ng-template pTemplate>
 <!--        <p-card>
           <pre>{{ profile$ | async | json }}</pre>

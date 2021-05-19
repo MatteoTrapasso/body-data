@@ -34,6 +34,6 @@
 - [ x ] per vedere _id bisogna ricaricare pagina (controllare oggetto nestjs)
 - [ x ] nascondere _id e user dalla tabella
   ---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
-- [   ] fix logout bug
+- [ x ] fix logout bug (appendTo = "body")
 - [   ] creare api per deleteAll, updateMany, insertMany
-- [   ]
+- [   ] unificare repository
