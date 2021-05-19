@@ -36,5 +36,7 @@
   ---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
 - [ x ] fix logout bug (appendTo = "body")
 - [ x ] disabilitare KG al caricamento della pagina
+- [ x ] spostare pulsanti sotto grafico
+- [ x ] eliminare scritta 'actions' in list
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] unificare repository
