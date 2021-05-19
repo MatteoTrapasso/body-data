@@ -41,4 +41,4 @@
 - [ x ] inserire unità di misura in form e list
 - [ x ] add tooltipe
 - [   ] creare api per deleteAll, updateMany, insertMany
-- [   ] unificare repository
+- [   ] unificare repositories
