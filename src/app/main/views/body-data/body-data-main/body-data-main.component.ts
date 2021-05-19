@@ -4,8 +4,7 @@ import {BodyDataStoreActions, BodyDataStoreSelectors, RootStoreState} from '@roo
 import {Actions} from 'ngrx-entity-crud';
 import {BodyData} from '@models/vo/body-data';
 import {Observable, of} from 'rxjs';
-import {filter, map, pluck, tap} from 'rxjs/operators';
-import {getAttributeValue} from 'codelyzer/util/getAttributeValue';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-body-data-main',

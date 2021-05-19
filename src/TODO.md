@@ -39,5 +39,6 @@
 - [ x ] spostare pulsanti sotto grafico
 - [ x ] eliminare scritta 'actions' in list
 - [ x ] inserire unità di misura in form e list
+- [ x ] add tooltipe
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] unificare repository

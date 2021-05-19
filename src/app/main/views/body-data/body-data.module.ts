@@ -18,6 +18,7 @@ import {ButtonCreateManyTestBodyDataComponent} from './components/button-create-
 import {NgLetModule} from '@core/directive/ng-let.directive';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ChartModule} from 'primeng/chart';
+import {TooltipModule} from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {ChartModule} from 'primeng/chart';
         SearchModule,
         NgLetModule,
         ToolbarModule,
-        ChartModule
+        ChartModule,
+        TooltipModule
     ],
   providers: [],
   entryComponents: []
