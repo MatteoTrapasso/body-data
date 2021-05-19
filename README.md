@@ -32,9 +32,9 @@ app link: https://body-data.herokuapp.com/body-data
   - register to https://account.mongodb.com/account/login
   - create a DB
   - replace the parameters related to MongoDB in 'src/app.module.ts' with those of the DB you created
-  
 
-to run:
+
+# run:
 
 body-data-crud:
 ```
