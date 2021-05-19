@@ -35,5 +35,6 @@
 - [ x ] nascondere _id e user dalla tabella
   ---------------------------------------------------VERSIONE 2.0------------------------------------------------------------------------
 - [ x ] fix logout bug (appendTo = "body")
+- [ x ] disabilitare KG al caricamento della pagina
 - [   ] creare api per deleteAll, updateMany, insertMany
 - [   ] unificare repository

@@ -49,9 +49,10 @@ export class BodyDataMainComponent implements OnInit {
           datasets: [
             {
               label: 'KG',
+              hidden: true,
               data: [],
               fill: false,
-              borderColor: '#42A5F5'
+              borderColor: '#42A5F5',
             },
             {
               label: 'BMI',
